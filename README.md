@@ -1,12 +1,6 @@
-# SonarQube in 60 Minutes by Kastro
+# SonarQube in 60 Minutes by Tejas
 
 This is a One-Stop solution real-time project on SonarQube to perform Code Quality Analysis. In this video, I have integrated Jenkins with Maven, SonarQube, and Docker, where the application will be accessed while running inside a container.
-
-## 🎥 Course Links
-
-- [Docker Playlist](https://www.youtube.com/playlist?list=PLs-PsDpuAuTeNx3OgGQ1QrpNBo-XE6VBh)
-- [Explore AWS Tutorials](https://www.youtube.com/playlist?list=PLs-PsDpuAuTdOcZa-DDgG8KRbtMI_XRrC)
-- [Nexus YouTube Video Link](https://youtu.be/opJAfDOCZuI)
 
 ## 🤝 Connect with Me
 
