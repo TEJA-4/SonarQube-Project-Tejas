@@ -10,7 +10,7 @@ pipeline {
     environment {
         SCANNER_HOME = tool 'sonar-scanner'
         DOCKERHUB_USERNAME = 'tejas009'  // Set this directly to your Docker Hub username
-        DOCKER_IMAGE = "${DOCKERHUB_USERNAME}/Tejas-app:latest"
+        DOCKER_IMAGE = "${DOCKERHUB_USERNAME}/tejas-app:latest"
     }
 
     stages {
@@ -72,10 +72,10 @@ pipeline {
             steps {
                 script {
                     // Stop any existing container with the same name
-                    sh "docker stop Tejas-app || true && docker rm Tejas-app || true"
+                    sh "docker stop tejas-app || true && docker rm tejas-app || true"
                     
                     // Running the container
-                    sh "docker run -d --name Tejas-app -p 5555:5555 $DOCKER_IMAGE"
+                    sh "docker run -d --name tejas-app -p 5555:5555 $DOCKER_IMAGE"
                 }
             }
         }
