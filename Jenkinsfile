@@ -9,14 +9,14 @@ pipeline {
 
     environment {
         SCANNER_HOME = tool 'sonar-scanner'
-        DOCKERHUB_USERNAME = 'kastrov'  // Set this directly to your Docker Hub username
-        DOCKER_IMAGE = "${DOCKERHUB_USERNAME}/spotify-app:latest"
+        DOCKERHUB_USERNAME = 'tejas009'  // Set this directly to your Docker Hub username
+        DOCKER_IMAGE = "${DOCKERHUB_USERNAME}/Tejas-app:latest"
     }
 
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/KastroVKiran/SonarQube-Project-Kastro.git'
+                git branch: 'main', url: 'https://github.com/TEJA-4/SonarQube-Project-Tejas.git'
             }
         }
 
@@ -35,7 +35,7 @@ pipeline {
         stage('Sonar Analysis') {
             steps {
                 withSonarQubeEnv('sonar-server') {
-                    sh "$SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=Kastro -Dsonar.projectKey=KastroKey -Dsonar.java.binaries=target"
+                    sh "$SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=Tejas -Dsonar.projectKey=TejasKey -Dsonar.java.binaries=target"
                 }
             }
         }
@@ -72,10 +72,10 @@ pipeline {
             steps {
                 script {
                     // Stop any existing container with the same name
-                    sh "docker stop spotify-app || true && docker rm spotify-app || true"
+                    sh "docker stop Tejas-app || true && docker rm Tejas-app || true"
                     
                     // Running the container
-                    sh "docker run -d --name spotify-app -p 5555:5555 $DOCKER_IMAGE"
+                    sh "docker run -d --name Tejas-app -p 5555:5555 $DOCKER_IMAGE"
                 }
             }
         }
