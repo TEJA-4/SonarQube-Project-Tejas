@@ -1,6 +1,6 @@
 											SonarQube - Code Quality Analysis
 														by
-													Kastro Kiran V
+													      Tejas
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Step 1: Launch Ubuntu VM with instance type as t2.large, AMI: 24.04, Storage: 25 GB, No. of instances: 1
 
@@ -83,5 +83,9 @@ Similarly configure dockerhub credentials with id as "dockerhub-credentials" wit
 
 Manage Jenkins --- System --- Scroll down to 'SonarQube servers' --- Click on 'Add SonarQube' --- Name: sonar-server --- ServerURL: <PublicIPofSQinstalledVM>:9000 --- Server Authentication Token: select 'sonar-token' --- Apply --- Save
 
+Create item --- new item --- name of item "Teja4-Pipeline" --- select Pipeline option --- click on OK
 
-<For the next steps, please watch the video>
+Go to Pipeline line --- Copy and paste pipeline code from jenkinsfile --- do one change in it as below
+click on pipeline syntax --- sample step = git:Git --- copy paste URL of your git where your code is present --- branch = main --- generate pipeline script --- copy all the link and paste in git checkout in jenkins pipeline code --- apply and save.
+
+See that pipeline is created --- click on bulid now.
