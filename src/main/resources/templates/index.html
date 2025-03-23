@@ -3,33 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kastro's App</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Teja4Learn - Online Learning Platform</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="app-container">
-        <!-- Welcome Message -->
-        <h1 class="app-title">Welcome to Kastro's App</h1>
 
-        <!-- Buttons with YouTube Icons for Docker and Nexus Courses -->
-        <div class="youtube-links">
-            <a href="https://www.youtube.com/playlist?list=PLs-PsDpuAuTeNx3OgGQ1QrpNBo-XE6VBh" target="_blank" class="youtube-button">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/YouTube_icon_%282013-2017%29.png" alt="YouTube Icon" class="youtube-icon">
-                Click Here for Docker Course
-            </a>
-            <a href="https://www.youtube.com/watch?v=opJAfDOCZuI" target="_blank" class="youtube-button">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/YouTube_icon_%282013-2017%29.png" alt="YouTube Icon" class="youtube-icon">
-                Click Here for Nexus Course
-            </a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Teja4Learn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex mx-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search for courses..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">My Courses</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#">Sign Up</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
 
-        <!-- Footer Message -->
-        <div class="footer">
-            <h2 class="footer-message">Congratulations for learning SonarQube</h2>
+    <!-- Hero Section -->
+    <header class="hero text-white text-center py-5">
+        <div class="container">
+            <h1 class="fw-bold">Learn Cloud, DevOps & AI Anytime, Anywhere!</h1>
+            <p class="lead">Join thousands of learners and boost your career today.</p>
+            <a href="#" class="btn btn-warning btn-lg">Explore Courses</a>
         </div>
-    </div>
+    </header>
 
-    <script src="app.js"></script>
+    <!-- Featured Courses -->
+    <section class="container my-5">
+        <h2 class="fw-bold mb-4">Top Courses</h2>
+        <div class="row">
+            <!-- AWS Course -->
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="aws.jpg" class="card-img-top" alt="AWS">
+                    <div class="card-body">
+                        <h5 class="card-title">AWS Cloud Mastery</h5>
+                        <p class="text-muted">Learn AWS services and architecture.</p>
+                        <p><strong>$29.99</strong> <span class="text-muted"><del>$99.99</del></span></p>
+                        <span class="badge bg-warning text-dark"><i class="fas fa-star"></i> 4.8</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Azure Course -->
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="azure.jpg" class="card-img-top" alt="Azure">
+                    <div class="card-body">
+                        <h5 class="card-title">Microsoft Azure Essentials</h5>
+                        <p class="text-muted">Master Azure cloud computing.</p>
+                        <p><strong>$24.99</strong> <span class="text-muted"><del>$79.99</del></span></p>
+                        <span class="badge bg-warning text-dark"><i class="fas fa-star"></i> 4.7</span>
+                    </div>
+                </div>
+            </div>
+            <!-- GCP Course -->
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="gcp.jpg" class="card-img-top" alt="GCP">
+                    <div class="card-body">
+                        <h5 class="card-title">Google Cloud Platform (GCP)</h5>
+                        <p class="text-muted">Deep dive into GCP services.</p>
+                        <p><strong>$34.99</strong> <span class="text-muted"><del>$89.99</del></span></p>
+                        <span class="badge bg-warning text-dark"><i class="fas fa-star"></i> 4.6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Teja4Learn. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
