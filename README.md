@@ -1,23 +1,49 @@
-# SonarQube in 60 Minutes by Tejas
+# 🚀 Code Analysis with SonarQube, Jenkins, Docker & DockerHub  
 
-This is a One-Stop solution real-time project on SonarQube to perform Code Quality Analysis. In this video, I have integrated Jenkins with Maven, SonarQube, and Docker, where the application will be accessed while running inside a container.
-
-## 🤝 Connect with Me
-
-For networking and further discussions, feel free to connect with me!
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kastro-kiran/)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/EGw6ZlwUHZc82cA0vXFnwm) - Join the DevOps technical discussions!
-
-## 💬 Share Your Thoughts
-
-Your feedback is highly valuable! Feel free to share your opinions and suggestions in the **Comments section** of the videos.
-
-## 🎉 Happy Learning!
-
-Stay committed, stay curious, and let’s build a strong DevOps foundation together.
+This project demonstrates how to **automate code quality analysis** using **SonarQube**, integrated with **Jenkins, Docker, and DockerHub**. The pipeline ensures that only high-quality code is deployed by scanning source code for vulnerabilities, bugs, and security issues.
 
 ---
 
-<p align="center">
-    <img src="https://media.licdn.com/dms/image/v2/D5603AQHJB_lF1d9OSw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718971147172?e=1733356800&v=beta&t=bz-SXs7FHwIDqQ9xlPibErrGvpHDdAjMJEr9WqHsi9A" alt="Kastro Profile Image
+## 🔥 Project Overview  
+
+### 🔹 Technologies Used:  
+✅ **SonarQube** - Code quality & security analysis  
+✅ **Jenkins** - CI/CD pipeline automation  
+✅ **Docker** - Containerized environment for SonarQube & application  
+✅ **DockerHub** - Storing & managing Docker images  
+
+### 🛠 Workflow:
+1️⃣ **Developer commits code** to the repository  
+2️⃣ **Jenkins triggers a build** and pulls the latest code  
+3️⃣ **SonarQube scans the code** for vulnerabilities & quality issues  
+4️⃣ **Docker builds an image** with the analyzed application  
+5️⃣ **Image is pushed to DockerHub** for deployment  
+
+---
+
+## 📌 How to Set Up the Project  
+
+### 🔹 Prerequisites:  
+✅ Install **Jenkins, SonarQube, and Docker**  
+✅ Create an account on **DockerHub**  
+✅ Configure **SonarQube in Jenkins**  
+
+### 🔹 Steps:  
+1️⃣ **Install SonarQube & Jenkins**  
+2️⃣ **Configure SonarQube Scanner in Jenkins**  
+3️⃣ **Write a Jenkins Pipeline** to analyze code  
+4️⃣ **Build a Docker image of the application**  
+5️⃣ **Push the Docker image to DockerHub**  
+
+---
+
+## 🎯 Key Features  
+
+🔹 **Automated Code Scanning** - SonarQube integration with Jenkins  
+🔹 **Containerized Deployment** - Application runs inside Docker containers  
+🔹 **Continuous Integration** - Jenkins automates the workflow  
+🔹 **Secure Image Storage** - DockerHub manages the Docker images  
+
+---
+
+🎉 **Happy Learning & Keep Building!** 🚀  
